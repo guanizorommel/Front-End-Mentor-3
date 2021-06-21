@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+/*Typographies*/
+h1, h2, p {
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+section {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*On this lesson you will learn how to put multiple background images and position them :)-rommel*/ 
+    background-color: hsl(185, 75%, 39%); /*Background color*/
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg); /*the two background images*/
+    background-repeat: no-repeat; /*make the background images not to repeat itself*/
+    background-position: -40% -40%,/*Adjusts the top bg pattern x and y axis*/ 
+    150% 1000%; /*Adjust the the bottom pattern x and y axis*/
+}
+
+.container {
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /*Add shadow in the box or container*/
+
+    /* border: 3px solid black; */
+
+}
+
+.card-top {
+    padding: 80px 0px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-image: url(../images/bg-pattern-card.svg);
+    /* border: 3px solid red; */
+}
+
+.card-middle {
+    text-align: center;
+    margin-top: -13%;
+}
+
+.card-middle img {
+    border-radius: 100px;
+    border: 5px solid #fff;
+}
+
+.card-middle h1 {
+    padding-top: 20px;
+}
+
+.card-middle p {
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+.card-bottom {
+    
+}
