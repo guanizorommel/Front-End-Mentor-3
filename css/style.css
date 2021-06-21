@@ -7,6 +7,16 @@ h1, h2, p {
     font-family: "Kumbh Sans", sans-serif;
 }
 
+h1 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 16px;
+    color: hsl(0, 0%, 59%);
+}
+
 section {
     min-width: 100vw;
     min-height: 100vh;
@@ -17,8 +27,8 @@ section {
     background-color: hsl(185, 75%, 39%); /*Background color*/
     background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg); /*the two background images*/
     background-repeat: no-repeat; /*make the background images not to repeat itself*/
-    background-position: -40% -40%,/*Adjusts the top bg pattern x and y axis*/ 
-    150% 1000%; /*Adjust the the bottom pattern x and y axis*/
+    background-position: -70% 200%,/*Adjusts the top bg pattern x and y axis*/ 
+    160% -140%; /*Adjust the the bottom pattern x and y axis*/
 }
 
 .container {
@@ -56,15 +66,36 @@ section {
 
 .card-middle p {
     padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.age {
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
 }
 
 
-
-
-
-
-
-
 .card-bottom {
-    
+    display: flex;
+    padding-top: 30px;
+    border-top: .1px solid hsl(0, 0%, 89%);
+    text-align: center;
+}
+
+.card-bottom >* {
+    flex: 1 1 100%;
+}
+
+.socialstatus p {
+    padding-top: 5px;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+/*Media Query*/
+
+@media (max-width: 500px) {
+    .container {
+        width: 85%;
+    }
 }
